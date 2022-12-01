@@ -9,7 +9,7 @@ const randomNumber = (start: number, end: number) => {
 randomNumber(0,40);
 
 const numItems = nums.map(num => (
-  <li>{num}</li>
+  <li className={num % 2 ? "even" : "odd"}>{num}</li>
 ))
 
 export default function App() {
